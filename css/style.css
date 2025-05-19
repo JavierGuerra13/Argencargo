@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo centrado con fondo blanco */
+.logo-container {
+    background-color: white;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.logo-container img {
+    height: 100px;
+    width: auto;
+}
+
+/* Menú con fondo azul */
+.navbar {
+    background-color: #003366;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+
+
+.banner{
+    background-image: url("../media1/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.bannertexto{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
