@@ -63,6 +63,18 @@ header {
 }
 
 /*HEro section*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .hero{
     background-image: url(../media1/banner2.jpeg);
     background-size: cover;
@@ -78,11 +90,21 @@ header {
 
 }
 
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 12px;
+    display: inline-block;
+    animation: fadeInUp 1s ease forwards;
+}
+
 .hero::before {
     content:"";
     position: absolute;
     top:0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.1);
     z-index:1;
 }
 
@@ -90,12 +112,16 @@ header {
   font-size: 48px;
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
   font-size: 20px;
   margin-bottom: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color:#ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .btn-cta {
@@ -135,7 +161,7 @@ header {
 
 .seccion-contacto {
     
-    max-width: 700px;
+    max-width: 100%;
     margin: 0px auto;
     padding: 40px 20px;
     background-color: #f8f9fa;
@@ -154,6 +180,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex: 1 1 400px;
+    min-width: 300px;
 }
 
 
@@ -191,6 +219,21 @@ transition: border-color 0.3s;
 
 }
 
+.contact-wrapper{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+@media (max-width: 600px) {
+    .footer-mapa iframe {
+        height: 250px !important;
+    }
+}
+
 
 /* seccion cssfooter*/
 .footer {
@@ -218,6 +261,13 @@ transition: border-color 0.3s;
    flex: 1;
    min-width: 250px;
 
+}
+
+.footer-mapa{
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer h4 {
