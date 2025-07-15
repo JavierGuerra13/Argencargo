@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Argencargo</title>
+  <meta name="description" content="Servicio de envíos desde Miami a Buenos Aires">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="logo-container">
+      <img src="media/logo3.png" alt="Nuevo Logo argencargo">
+    </div>
+    <p>📞 +1 (305) 123-4567 | ✉ info@argencargo.com</p>
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="pages/cotizaciones.html">Cotizaciones</a></li>
+      <li><a href="pages/servicios.html">Servicios</a></li>
+      <li><a href="pages/pagos.html">Pagos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Envíos desde Miami a Buenos Aires</h1>
+      <p>Rápido, seguro y al mejor precio.</p>
+      <a href="#formulario" class="btn-cta">¡Solicitá tu envío!</a>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="beneficios">
+    <div class="beneficio">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Seguridad</h3>
+      <p>Cuidamos cada paquete hasta su entrega.</p>
+    </div>
+    <div class="beneficio">
+      <i class="fas fa-clock"></i>
+      <h3>Rapidez</h3>
+      <p>Envíos puntuales garantizados.</p>
+    </div>
+    <div class="beneficio">
+      <i class="fas fa-dollar-sign"></i>
+      <h3>Economía</h3>
+      <p>Precios accesibles sin cargos ocultos.</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO VALIDADO -->
+  <section id="formulario" class="seccion-contacto">
+    <h2>Solicitá tu envío</h2>
+    <div class="contact-wrapper">
+      <form id="formValidado" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@mail.com">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta..."></textarea>
+
+        <p id="errores"></p>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h4>Argencargo</h4>
+        <p>1234 NW 7th Ave, Miami, FL</p>
+        <p>Email: info@argencargo.com</p>
+        <p>Tel: +1 (305) 123-4567</p>
+      </div>
+
+      <div class="footer-redes">
+        <h4>Seguinos</h4>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Whatsapp</a>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2025 Argencargo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/form-validation.js"></script>
+</body>
+</html>
